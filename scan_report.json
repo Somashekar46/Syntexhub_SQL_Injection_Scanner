@@ -1,0 +1,11 @@
+{
+  "target": "http://testphp.vulnweb.com/artists.php?artist=1",
+  "timestamp": "2026-04-13T11:31:13.980800",
+  "total_vulnerabilities": 0,
+  "vulnerabilities": [],
+  "scan_config": {
+    "method": "GET",
+    "max_threads": 5,
+    "delay": 0.3
+  }
+}
