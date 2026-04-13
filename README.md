@@ -35,17 +35,17 @@ pip install requests
 # Run the vulnerable test application
 python vulnerable_app.py
 Access at: http://localhost:5000/?id=1
- ### Run the Scanner(GUI Version (Recommended))
+### Run the Scanner(GUI Version (Recommended))
  python sql_scanner_gui.py
- ### CLI Version
- # Basic scan
+### CLI Version
+# Basic scan
 python advanced_sql_scanner.py "http://localhost:5000/?id=1"
-
 # With custom settings
 python advanced_sql_scanner.py "http://localhost:5000/?id=1" GET 10
 ### Scan Online Test Target (Legal)
 python advanced_sql_scanner.py "http://testphp.vulnweb.com/artists.php?artist=1" GET 5
-### 🏗️ Project Structure
+
+*** ### 🏗️ Project Structure
 Syntexhub_SQLi_Scanner/
 │
 ├── advanced_sql_scanner.py      # CLI version with concurrency
